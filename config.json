@@ -1,0 +1,8 @@
+{
+    "machineProperties":{
+        "quantity": {"minValue": 0, "maxValue": 100, "type":"int", "unit": "pcs"},
+        "voltage": {"minValue": 0, "maxValue": 120, "type":"float","unit": "V"}
+    },
+    "cycleTime":1,
+    "outputFileName": "logs.txt"
+}
