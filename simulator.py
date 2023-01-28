@@ -9,7 +9,7 @@ from machine import Machine
 def start_simulation(machine_name, machine_properties, cycle_time, work_period):
     logging.info("Starting simulation")
     real_time_env = simpy.rt.RealtimeEnvironment(factor=cycle_time)
-    Machine(real_time_env, machine_properties, machine_name)
+    Machine(real_time_env, machine_properties, machine_name, config["cycleTime"])
     simulation_cycles = work_period / cycle_time
     real_time_env.run(until=simulation_cycles)
     logging.info("Simulation fininshed")
